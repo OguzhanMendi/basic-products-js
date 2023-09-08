@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+    <div class="header bg-sky-600 w-full flex justify-between items-center px-4 py-4	">
+        <div class="left">
+            <p>E-Commerce</p>
+
+        </div>
+
+        <div class="middle">
+            <input class="placeholder:italic placeholder:text-slate-400 block bg-white  w-96 h-8 
+            rounded-md" placeholder="Search for anything..." type="text" id="search"/>
+        </div>
+
+        <div class="right flex items-center mx-5 space-x-2"> <!-- space-x-2 boşluğun genişliğini belirler -->
+            <i class="fa-solid fa-cart-plus"></i>
+            <input type="submit" id="urunEklemeButonu" value="Ürün Ekle"/>
+        </div>
+        
+    </div>
+
+
+    
+
+    <div class="drawer  hidden fixed inset-x-0 bottom-0 p-4 bg-white w-full h-80 border-t border-gray-300" id="popKapsayici">
+        <div class="drawer-content">
+          <h2 class="text-xl font-semibold mb-6">Ürün Oluştur</h2>
+          <!-- Kapatma işareti -->
+          <span id="kapatIsareti" class="cursor-pointer absolute top-4 right-4 text-gray-500 text-2xl">×</span>
+          <input type="text" id="UrunAdi" placeholder="Ürün Adı" class="block w-full p-2 border rounded-lg mb-2" />
+          <input type="number" id="UrunFiyat" placeholder="Ürün Fiyatı" class="block w-full p-2 border rounded-lg mb-2" />
+          <input type="text" id="UrunAciklama" placeholder="Ürün Açıklaması" class="block w-full p-2 border rounded-lg mb-4" />
+          <input type="submit" id="PopupUrunOlustur" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-full" value="Oluştur" />
+        </div>
+      </div>
+      
+      
+
+
+
+      <div class="UrunKapsayici">
+        <h1 class="h1 text-2xl font-semibold">Ürün Listesi (<span id="ÜrünSayisi"></span>)</h1>
+        <br>
+       
+        <div class="cards box-border flex flex-wrap" id="cards">
+            <!-- Ürün kartları burada oluşturulacak -->
+        </div>
+        
+      </div>
+
+
+
+
+    </div>
+</body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Ticaret</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+</html>
